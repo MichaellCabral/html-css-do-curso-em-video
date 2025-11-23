@@ -1,0 +1,15 @@
+div.conteiner {
+    background-color: lightsalmon;
+    display: flex;
+}
+
+div.item {    
+    background-color: lightskyblue;
+    border: 1px solid black;
+    flex: auto;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
