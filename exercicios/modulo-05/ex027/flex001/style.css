@@ -1,6 +1,7 @@
 div.conteiner {
     background-color: lightsalmon;
     display: flex;
+    margin: 20px;
 }
 
 div.item {    
@@ -12,4 +13,20 @@ div.item {
 
 h1 {
     text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+figure {
+    text-align: center;
+    margin: 0;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
