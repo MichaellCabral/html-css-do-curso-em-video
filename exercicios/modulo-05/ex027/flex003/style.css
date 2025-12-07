@@ -1,13 +1,13 @@
 div.conteiner {
     background-color: lightsalmon;
     display: flex;
-    margin: 20px;
-    flex-direction: ;
+    height: 100px;
+    flex-flow: column wrap; /*è um shorthand*/
 }
 
 div.item {    
     background-color: lightskyblue;
     border: 1px solid black;
     text-align: center;
-    padding: 10px;
+    flex: auto; /*só funciona no filho e é um shorthand*/
 }
