@@ -9,15 +9,23 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            
         }
         body {
             background-color: lightsalmon;
         }
         main { 
             background-color: lightgreen;
-            height: 90vh;
-            width: 90vw;
-            display: flex;
+            height: 100vh;
+            width: 100vw;
+            display: flex; /*'display: flex' é a propriedade que transforma o elemento em um container flexível, permitindo que seus filhos sejam organizados de acordo com as regras do Flexbox. */
+
+            flex-flow: row nowrap; /*'flex-flow: row nowrap' é uma propriedade do Flexbox que define a direção dos itens filhos como linha (row) e impede que eles quebrem para a próxima linha (nowrap). */
+
+            justify-content: center; /*'justify-content: center' é uma propriedade do Flexbox que alinha os itens filhos horizontalmente ao centro do container flexível. */
+
+            align-items: center; /*'align-items: center' é uma propriedade do Flexbox que alinha os itens filhos verticalmente ao centro do container flexível. */
+            
         }
         section {
             background-color: lightseagreen;
@@ -30,6 +38,7 @@
     <main>
         <section>
             <h1>Tela de Login</h1>
+            <p>Se coloca display: flex no pai que é o main (tela verde)</p>
         </section>
     </main>
 </body>
