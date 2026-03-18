@@ -3,18 +3,81 @@ div.conteiner {
     display: flex;
     flex-flow: row wrap;
     margin: 20px;
-    height: 400px;
-    align-content: space-evenly;
+    height: 300px;
+    /*align-content: stretch;*/ /*este é o valor padrão, ou seja, se não for declarado, o comportamento será este*/
 }
 
 div.item {    
     background-color: lightskyblue;
     border: 1px solid black;
     text-align: center;
-    padding: 40px;
+    padding: 30px;
     
 }
 
 h1 {
     text-align: center;
+}
+
+div.align-content-stretch {
+    align-content: stretch;
+    background-color: lightsalmon;
+    margin: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    height: 300px;
+}
+
+div.align-content-flex-start {
+    align-content: flex-start;
+    background-color: lightsalmon;
+    display: flex;
+    margin: 20px;
+    flex-flow: row wrap;
+    height: 300px;
+}
+
+div.align-content-flex-end {
+    align-content: flex-end;
+    background-color: lightsalmon;
+    display: flex;
+    margin: 20px;
+    flex-flow: row wrap;
+    height: 300px;
+}
+
+div.align-content-center {
+    align-content: center;
+    background-color: lightsalmon;
+    display: flex;
+    margin: 20px;
+    flex-flow: row wrap;
+    height: 300px;
+}
+
+div.align-content-space-between {
+    align-content: space-between;
+    background-color: lightsalmon;
+    display: flex;
+    margin: 20px;
+    flex-flow: row wrap;
+    height: 300px;
+}
+
+div.align-content-space-around {
+    align-content: space-around;
+    background-color: lightsalmon;
+    display: flex;
+    margin: 20px;
+    flex-flow: row wrap;
+    height: 300px;
+}
+
+div.align-content-space-evenly {
+    align-content: space-evenly;
+    background-color: lightsalmon;
+    display: flex;
+    margin: 20px;
+    flex-flow: row wrap;
+    height: 300px;
 }

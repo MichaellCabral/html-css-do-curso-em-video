@@ -8,8 +8,59 @@
 </head>
 <body>
     <h1>Flexible Box</h1>
+    <p>
+        <strong>Justify Content</strong>: Alinha os itens dentro do contêiner ao longo do eixo principal.
+            O eixo principal é definido pela propriedade <strong>flex-direction</strong>. 
+            Os valores comuns para <strong>justify-content</strong> incluem:
+            <ul>
+                <li><strong>flex-start</strong>: Alinha os itens no início do contêiner.</li>
+                <li><strong>flex-end</strong>: Alinha os itens no final do contêiner.</li>
+                <li><strong>center</strong>: Centraliza os itens dentro do contêiner.</li>
+                <li><strong>space-between</strong>: Distribui os itens com espaço igual entre eles, sem espaço nas extremidades.</li>
+                <li><strong>space-around</strong>: Distribui os itens com espaço igual ao redor deles, incluindo nas extremidades.</li>
+                <li><strong>space-evenly</strong>: Distribui os itens com espaço igual entre eles, incluindo nas extremidades.</li>
+            </ul>
+            <strong>align-items</strong>: Alinha os itens dentro do contêiner ao longo do eixo transversal (cross axis). O eixo transversal é perpendicular ao eixo principal. Os valores comuns para <strong>align-items</strong> incluem:
+            <ul>
+                <li><strong>stretch</strong>: Estica os itens para preencher o contêiner (padrão).</li>
+                <li><strong>flex-start</strong>: Alinha os itens no início do contêiner.</li>
+                <li><strong>flex-end</strong>: Alinha os itens no final do contêiner.</li>
+                <li><strong>center</strong>: Centraliza os itens dentro do contêiner.</li>
+                <li><strong>baseline</strong>: Alinha os itens pela linha de base do texto.</li>
+            </ul>
+                <strong>align-content</strong>: Alinha as linhas dentro do contêiner quando há espaço extra no eixo transversal (quando eles estão empacotados). Os valores comuns para <strong>align-content</strong> incluem:
+                <ul>
+                    <li><strong>stretch</strong>: Estica as linhas para preencher o contêiner (padrão).</li>
+                    <li><strong>flex-start</strong>: Alinha as linhas no início do contêiner.</li>
+                    <li><strong>flex-end</strong>: Alinha as linhas no final do contêiner.</li>
+                    <li><strong>center</strong>: Centraliza as linhas dentro do contêiner.</li>
+                    <li><strong>space-between</strong>: Distribui as linhas com espaço igual entre elas, sem espaço nas extremidades.</li>
+                    <li><strong>space-around</strong>: Distribui as linhas com espaço igual ao redor delas, incluindo nas extremidades.</li>
+                    <li><strong>space-evenly</strong>: Distribui as linhas com espaço igual entre elas, incluindo nas extremidades.</li>
+                </ul>
+    </p>
 
+    <h2>aumente e diminua a janela do seu navegador para verificar as quebras dos itens</h2>
+
+    <h2><strong>Align content tem o valor padrão stretch</strong></h2>
     <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>   
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+
+    <h2><strong>Align content stretch</strong></h2>
+    <div class="align-content-stretch">
         <div class="item">A</div>
         <div class="item">B</div>
         <div class="item">C</div>
@@ -24,6 +75,110 @@
         <div class="item">L</div>
         <div class="item">M</div>
     </div>
+
+    <h2>Align Content - Flex Start</h2>
+
+    <div class="align-content-flex-start">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+
+    <h2>Align Content - Flex End</h2>
+    <div class="align-content-flex-end">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+
+    <h2>Align Content - Center</h2>
+    <div class="align-content-center">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+
+    <h2>Align Content - Space Between</h2>
+    <div class="align-content-space-between">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+
+    <h2>Align Content - Space Around</h2>
+    <div class="align-content-space-around">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+
+    <h2>Align Content - Space Evenly</h2>
+    <div class="align-content-space-evenly">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+
 
 </body>
 </html>
