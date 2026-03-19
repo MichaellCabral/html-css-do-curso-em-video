@@ -1,0 +1,36 @@
+div.conteiner {
+    background-color: lightsalmon;
+    display: flex;
+    flex-flow: row wrap;
+    height: 400px;
+    align-items: flex-start;
+}
+
+div.item {    
+    background-color: lightskyblue;
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+}
+
+div#A {
+    
+}
+div#B {
+    align-self: auto; /*herda do pai*/
+}
+div#C {
+    align-self: flex-end;
+}
+div#D {
+    
+}
+div#E {
+    align-self: center  ;
+}
+div#F {
+    align-self: flex-start;
+}
+div#G    {
+    align-self: stretch;
+}

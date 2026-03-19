@@ -7,7 +7,7 @@ div.conteiner {
 div.item {    
     background-color: lightskyblue;
     border: 1px solid black;
-    flex: auto;
+    flex: auto;/* é aplicada somente aos itens e não ao conteiner */
     text-align: center;
 }
 

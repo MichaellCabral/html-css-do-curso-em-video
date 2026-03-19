@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-br"></html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flexible box</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Flexible Box</h1>
+    <h2>Order</h2>
+    <p>Se aplica à propriedade "order" dos itens dentro do contêiner flexível ordenando-os.</p>
+    <p>a propriedade "flex: auto;" é aplicada somente aos itens e não ao conteiner, neste exemplo tiramos esta propriedade.</p>
+    <p>
+        O align self sobrepõe o align items, ou seja, mesmo que o pai tenha um alinhamento definido, o item com align self diferente irá se alinhar de acordo com a propriedade definida nele. A não ser que o align self seja auto, neste caso ele irá herdar o alinhamento do pai.</p>
+
+    <div class="conteiner">
+        <div class="item"id="A">A</div>
+        <div class="item"id="B">B</div>
+        <div class="item"id="C">C</div>
+        <div class="item"id="D">D</div>
+        <div class="item"id="E">E</div>
+        <div class="item"id="F">F</div>
+        <div class="item"id="G">G</div>
+    </div>
+
+    <h2>Align self</h2>
+    <p>Se aplica à propriedade "align-self" dos itens dentro do contêiner flexível alinhando-os no eixo transversal.</p>
+    <p>Com ele é possível controlar o alinhamento individual de cada item.</p>
+
+    <h3>auto</h3>
+    <p>Herda o alinhamento vertical do pai seja ele align content ou align items</p>
+
+    <h3>flex-start</h3>
+    <p>alinha o item ao início do eixo transversal, cross start</p>
+
+    <h3>flex-end</h3>
+    <p>alinha o item ao final do eixo transversal, cross end</p>
+
+    <h3>center</h3>
+    <p>alinha o item ao centro do eixo transversal</p>
+
+    <h3>stretch</h3>
+    <p>estica o item para preencher o eixo transversal</p>
+
+</body>
+</html>
+    
