@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-br"></html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flexible box 011</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Propriedade flex</h1>
+    <p>A propriedade flex é uma forma abreviada (shortland) de definir as propriedades flex grow, flex shrink e flex basis em um único valor.</p>
+    <p>Ela é usada para controlar o crescimento, encolhimento e a base dos itens no contêiner flexível.</p>
+    <p>
+        flex: 0 1 auto; /* valor padrão */ <br>
+        flex: initial; /* equivalente a flex: 0 1 auto */ <br>
+        flex: auto: /* equivalente a flex: 1 1 auto */ <br>
+        flex: none; /* equivalente a flex: 0 0 auto */ o mais rígido, não cresce nem encolhe. <br>
+        flex: 3: /* equivalente a flex: 3 1 auto */ o item pode crescer três vezes mais do que os outros itens. <br>
+
+    </p>
+
+    <div class="conteiner">
+        <div class="item" id="itemA">A</div>
+        <div class="item" id="itemB">B</div>
+        <div class="item" id="itemC">C</div>
+        
+    </div>
