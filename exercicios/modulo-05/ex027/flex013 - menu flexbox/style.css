@@ -16,12 +16,45 @@ header {
     background-color: gray;
     color: white;
     padding: 10px;
+    display: flex;
+    flex-flow: row wrap; /* Para que os itens do header possam quebrar para a próxima linha se necessário */
+    justify-content: space-between; /* Para que os itens do header fiquem espaçados igualmente */
+    align-items: center;
 }
 
 header h1 {
     border: 1px dotted black;
+    flex: 0 0 200px;
+}
+
+header nav {
+    border: 1px dotted black;
+    display: flex;
+    flex-flow: row wrap; /* Para que os itens do nav possam quebrar para a próxima linha se necessário */
+    justify-content: flex-end; /* Para que os itens do nav fiquem alinhados à direita */
+}
+
+header nav a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none; /* Para remover o sublinhado dos links */
+    text-align: center;
+}
+
+header nav a:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: all 0.3s ease; /* Para suavizar a transição de cor e borda */
 }
 
 main {
-    background-color: white;  
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.336);
 }
