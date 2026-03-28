@@ -13,9 +13,15 @@ body {
    
 }
 
-p, h1, h2 {
+p {
     margin-bottom:  10px; /* Para adicionar um espaço entre os parágrafos e os títulos */
     text-align: justify; /* Para justificar o texto */
+}
+
+h1,h2 {
+    margin-bottom: 20px; /* Para adicionar um espaço entre os títulos e os parágrafos */
+    text-align: left;
+    line-height: 1.2em; /* Para reduzir o espaçamento entre as linhas dos títulos */
 }
 
 header, section.normal {
@@ -26,4 +32,44 @@ header, section.normal {
 section.flex-content {
     padding: 20px;
     background-color: lightgrey;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+article.text-media {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; 
+
+}
+
+article.media-text{
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+}
+
+article div.text {
+    flex: 1 1 500px; /* O texto pode crescer e encolher, mas tem um tamanho base de 500px */
+
+}
+
+article div.media {
+    flex: 1 0 500px; /* O media pode crescer, mas não pode encolher, e tem um tamanho base de 500px */
+
+}
+
+div.media > img {
+    display: block;
+    margin: auto; /* Para centralizar a imagem dentro do contêiner */
+    width: 300px;
+    padding: 10px;
+
+}
+
+div.media > iframe {
+    display: block;
+    margin: auto; /* Para centralizar o vídeo dentro do contêiner */
+    width: 90%;
 }
